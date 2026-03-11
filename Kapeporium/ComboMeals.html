@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kapeporium - Foods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Kapeporium.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="Logo">
+            <a href="Kapeporium.html"><img src="pics/KPLogo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Kapeporium.html">Home</a></li>
+                <li class="menu-dropdown">
+                    <a href="Menu.html">Menu</a>
+                    <ul class="dropdown-content">
+                        <li><a href="ComboMeals.html">Combo Meals</a></li>
+                    </ul>
+                </li>
+                <li class="menu-dropdown">
+                    <a href="Events.html">Events</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Booking.html">Event Booking</a></li>
+                    </ul>
+                </li>
+                <li class="menu-dropdown">
+                    <a href="About.html">About Us</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container my-5">
+
+        <div class="row justify-content-center g-5">
+
+            <div class="col-lg-5">
+                <div class="combo-card p-5">
+
+                    <h2 class="combo-title text-center mb-4">
+                        LATTE COMBO SOLO MEALS
+                    </h2>
+
+                    <div class="combo-item">
+                        <span>CheeseBurger Meal</span>
+                        <span>₱228</span>
+                    </div>
+
+                    <div class="combo-item">
+                        <span>French Chix Meal</span>
+                        <span>₱238</span>
+                    </div>
+
+                    <div class="combo-item">
+                        <span>Cheeseburger with Fruit Tea</span>
+                        <span>₱198</span>
+                    </div>
+
+                    <div class="combo-item">
+                        <span>Cheeseburger, Fruit Tea, & Fries</span>
+                        <span>₱218</span>
+                    </div>
+
+                    <div class="combo-item">
+                        <span>Alfredo Meal</span>
+                        <span>₱248</span>
+                    </div>
+
+                    <div class="combo-item">
+                        <span>Fish 'n Chips Meal</span>
+                        <span>₱258</span>
+                    </div>
+
+                    <div class="combo-item">
+                        <span>Chicken Sandwich Meal</span>
+                        <span>₱268</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-5">
+                <div class="combo-card p-5">
+
+                    <h2 class="combo-title text-center mb-4">
+                        LATTE COMBO B1T1 MEALS
+                    </h2>
+
+                    <div class="combo-item">
+                        <span>Cheeseburger Latte</span>
+                        <span>₱338</span>
+                    </div>
+
+                    <div class="combo-item">
+                        <span>Alfredo Meal</span>
+                        <span>₱348</span>
+                    </div>
+
+                    <div class="combo-item">
+                        <span>French Chix Meal</span>
+                        <span>₱348</span>
+                    </div>
+
+                    <div class="combo-item">
+                        <span>Fish 'n Chips Meal</span>
+                        <span>₱358</span>
+                    </div>
+
+                    <div class="combo-item">
+                        <span>Lasagna Meal</span>
+                        <span>₱358</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="order-platforms">
+        <div class="ORDERTEXT">
+            <h1>Order now on<h1>
+        </div>
+      
+          <a href="https://www.grab.com/ph/food/" target="_blank">
+            <img src="pics/GRABFOOD.png" alt="GrabFood logo" class="logo">
+          </a>
+      
+          <a href="https://www.foodpanda.ph/" target="_blank">
+            <img src="pics/Foodpanda.png" alt="Foodpanda logo" class="logo">
+          </a>
+      
+      </section>
+
+</body>
+<footer class="footer text-center">
+
+    <div class="footer-contact">
+        <p>Contact Us</p>
+        <a href="https://www.instagram.com/kape.porium?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <img src="pics/ig.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.facebook.com/kapeporium">
+            <img src="pics/fb.png" alt="Facebook" class="social-icon">
+        </a>
+        <span class="contact-info">
+            Email: <a href="mailto:kapeporium@gmail.com">kapeporium@gmail.com</a> |
+            Phone: <a href="tel:+639178000577">+63 917 800 0577</a>
+        </span>
+    </div>
+    </div>
+    <p>Created by Denise Julia Aquino, Samuel Joshua Balangitan, Crislyn Ezra Dimaisip, Earth Dino, Lian Marco Villones
+    </p>
+    <p>© 2021 All Rights Reserved</p>
+
+</footer>
+
+<button id="scrollToTopBtn" class="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const scrollBtn = document.getElementById('scrollToTopBtn');
+        if (window.pageYOffset > 300) {
+            scrollBtn.classList.add('show');
+        } else {
+            scrollBtn.classList.remove('show');
+        }
+    });
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kapeporium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="Kapeporium.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="Logo">
+            <a href="Kapeporium.html"><img src="pics/KPLogo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Kapeporium.html">Home</a></li>
+                <li class="menu-dropdown">
+                    <a href="Menu.html">Menu</a>
+                    <ul class="dropdown-content">
+                        <li><a href="ComboMeals.html">Combo Meals</a></li>
+                    </ul>
+                </li>
+                <li class="menu-dropdown">
+                    <a href="Events.html">Events</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Booking.html">Event Booking</a></li>
+                    </ul>
+                </li>
+                <li class="menu-dropdown">
+                    <a href="About.html">About Us</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section">
+
+        <h1>About Kapeporium</h1>
+    
+        <div class="about-box">
+            <h2>Our Story</h2>
+            <p>
+            Kapeporium was created to bring people together through coffee.
+            What started as a small idea became a cozy place where friends,
+            families, and students can relax, study, and enjoy quality drinks
+            and food.
+            </p>
+        </div>
+    
+        <div class="about-box">
+            <h2>Our Mission</h2>
+            <p>
+            Our mission is to provide high-quality coffee while creating a warm
+            and welcoming space for everyone. We want every customer to feel
+            comfortable and enjoy their time at Kapeporium.
+            </p>
+        </div>
+    
+        <div class="about-box">
+            <h2>Our Coffee</h2>
+            <p>
+            Every cup at Kapeporium is prepared with care. From rich espresso
+            to creamy lattes, we focus on flavor, freshness, and quality to
+            give you the best coffee experience.
+            </p>
+        </div>
+    
+        <div class="about-box">
+            <h2>Our Community</h2>
+            <p>
+            Kapeporium is more than just a café. It is a place where people
+            connect, study, work, and create memories while enjoying coffee
+            and good food.
+            </p>
+        </div>
+    
+    </section>
+
+</body>
+<footer class="footer text-center">
+
+    <div class="footer-contact">
+        <p>Contact Us</p>
+        <a href="https://www.instagram.com/kape.porium?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <img src="pics/ig.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.facebook.com/kapeporium">
+            <img src="pics/fb.png" alt="Facebook" class="social-icon">
+        </a>
+        <span class="contact-info">
+            Email: <a href="mailto:kapeporium@gmail.com">kapeporium@gmail.com</a> |
+            Phone: <a href="tel:+639178000577">+63 917 800 0577</a>
+        </span>
+    </div>
+    </div>
+    <p>Created by Denise Julia Aquino, Samuel Joshua Balangitan, Crislyn Ezra Dimaisip, Earth Dino, Lian Marco Villones
+    </p>
+    <p>© 2021 All Rights Reserved</p>
+
+</footer>
+
+<button id="scrollToTopBtn" class="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const scrollBtn = document.getElementById('scrollToTopBtn');
+        if (window.pageYOffset > 300) {
+            scrollBtn.classList.add('show');
+        } else {
+            scrollBtn.classList.remove('show');
+        }
+    });
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</html>

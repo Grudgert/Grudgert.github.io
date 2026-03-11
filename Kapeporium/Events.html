@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kapeporium - Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Kapeporium.css">
+    <link rel="stylesheet" href="Booking.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="Logo">
+            <a href="Kapeporium.html"><img src="pics/KPLogo.png" alt="Logo"></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="Kapeporium.html">Home</a></li>
+                <li class="menu-dropdown">
+                    <a href="Menu.html">Menu</a>
+                    <ul class="dropdown-content">
+                        <li><a href="ComboMeals.html">Combo Meals</a></li>
+                    </ul>
+                </li>
+                <li class="menu-dropdown">
+                    <a href="Events.html">Events</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Booking.html">Event Booking</a></li>
+                    </ul>
+                </li>
+                <li class="menu-dropdown">
+                    <a href="About.html">About Us</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>Event Packages</h1>
+        <p>
+            Planning an event?
+        </p>
+        <p>
+            Let us handle the coffee ☕🤎
+            Our Kapeporium Event Packages are designed to elevate your celebrations with handcrafted drinks your guests
+            will love.
+            Choose your flavors, customize your drinks, and let the good sips flow.
+        </p>
+        <p>
+            📍 Now accepting event bookings!
+        </p>
+    </section>
+
+
+    
+    <section class="gallery">
+        <h2>Our Place</h2>
+        <div class="gallery-container">
+            <img src="pics/cafe interior.jpg" alt="Cafe Interior">
+            <img src="pics/Outdoor2.jpg" alt="Event Setup">
+            <img src="pics/dining.jpg" alt="Dining Area">
+            <img src="pics/Outdoor.jpg" alt="Outdoor Area">
+        </div>
+    </section>
+
+  
+    <section class="gallery">
+        <h2>Pop Up Booths</h2>
+
+        <div class="gallery-container">
+            <img src="pics/pic2.jpg" alt="Pop Up Booth 1">
+            <img src="pics/pic4.jpg" alt="Pop Up Booth 2">
+            <img src="pics/pic1.jpg" alt="Pop Up Booth 3">
+            <img src="pics/pic 3.jpg" alt="Pop Up Booth 4">
+        </div>
+    </section>
+
+
+  
+    <section class="packages" id="event-packages">
+        <h2>Event Packages</h2>
+
+        <div class="package-container">
+
+            <div class="package-card">
+                <h3>Brew Crew Experience</h3>
+                <p><strong>₱6,999</strong></p>
+                <ul>
+                    <li>50 Pax</li>
+                    <li>Choose 4 flavors</li>
+                    <li>1 Custom Drink</li>
+                </ul>
+            </div>
+
+            <div class="package-card">
+                <h3>Signature Sips Party</h3>
+                <p><strong>₱7,999</strong></p>
+                <ul>
+                    <li>75 Pax</li>
+                    <li>Choose 5 flavors</li>
+                    <li>1 Custom Drink</li>
+                </ul>
+            </div>
+
+            <div class="package-card">
+                <h3>Ultimate Coffee Bar</h3>
+                <p><strong>₱11,999</strong></p>
+                <ul>
+                    <li>100 Pax</li>
+                    <li>Choose 5 flavors</li>
+                    <li>1 Custom Drink</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="book-now-container">
+            <a href="Booking.html" class="book-now-btn">Book Now</a>
+        </div>
+    </section>
+    
+
+
+   
+</body>
+<footer class="footer text-center">
+
+    <div class="footer-contact">
+        <p>Contact Us</p>
+        <a href="https://www.instagram.com/kape.porium?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <img src="pics/ig.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.facebook.com/kapeporium">
+            <img src="pics/fb.png" alt="Facebook" class="social-icon">
+        </a>
+        <span class="contact-info">
+            Email: <a href="mailto:kapeporium@gmail.com">kapeporium@gmail.com</a> |
+            Phone: <a href="tel:+639178000577">+63 917 800 0577</a>
+        </span>
+    </div>
+    </div>
+    <p>Created by Denise Julia Aquino, Samuel Joshua Balangitan, Crislyn Ezra Dimaisip, Earth Dino, Lian Marco Villones
+    </p>
+    <p>© 2021 All Rights Reserved</p>
+
+</footer>
+
+<button id="scrollToTopBtn" class="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const scrollBtn = document.getElementById('scrollToTopBtn');
+        if (window.pageYOffset > 300) {
+            scrollBtn.classList.add('show');
+        } else {
+            scrollBtn.classList.remove('show');
+        }
+    });
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</html>
